@@ -1,7 +1,14 @@
+This is the landing page for the website. Anytime a user clicks "Home" in the navigation bar, this is where they will be redirected. 
+
 <template>
-  <div>
-    <NavigationBar></NavigationBar>
-  </div>
+  <body id="body">
+    <div>
+      <NavigationBar></NavigationBar>
+    </div>
+    <div>
+
+    </div>
+  </body>
 </template>
 
 <script>
@@ -16,17 +23,18 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #0d5298;
-  margin-top: 60px;
-}
+  * {
+    background: black;
+  }
 
-#placeholder {
-  color: red; 
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    margin: 0; 
+    padding: 0; 
+  }
+  
 
 </style>

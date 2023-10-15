@@ -1,8 +1,13 @@
+This is the navigation bar component of the website.
+
 <template>
   <div class="navigation-bar">
-    <a class="active" href="#home">Home</a>
-    <a href="#experience">Experience</a>
-    <a href="#interests">Interests</a>
+    <h1>Pratik Pande</h1>
+    <div id="nav-links">
+        <a class="active" href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#interests">Interests</a>
+    </div>
   </div>
 </template>
 
@@ -12,13 +17,24 @@
     };
 </script>
 
-<style>
+<style scoped>
     /* Styling for navigation bar itself */
     .navigation-bar {
-        margin: 0; 
-        padding: 0;
-        background-color: #333;
+        /* margin: 0; 
+        padding: 0; */
         overflow: hidden;
+        align-content: right;
+    }
+
+    .navigation-bar h1 {
+        color: #F64C72;
+        float: left;
+        font-size: 17px; 
+        padding: .3% 1%
+    }
+
+    .navigation-bar div {
+        margin-left: 15%; 
     }
 
     /* Styling for links within nav bar */
@@ -26,20 +42,20 @@
         float: left;
         color: #ffffff;
         text-align: center;
-        padding: 14px 16px;
+        padding: 1% 1%;
         text-decoration: none;
         font-size: 17px;
     }
 
     /* Hover over links */
     .navigation-bar a:hover {
-        background-color: #ddd;
-        color: rgb(255, 1, 1);
+        background-color: #F64C72;
+        color: rgb(255, 255, 255);
     }
 
     /* Active link */
     .navigation-bar a.active {
-        background-color: #04AA6D;
+        background-color: #F64C72;
         color: rgb(249, 249, 249);
     }
 </style>
