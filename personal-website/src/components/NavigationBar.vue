@@ -27,7 +27,7 @@ This is the navigation bar component of the website.
     }
 
     .navigation-bar h1 {
-        color: #F64C72;
+        color: #F03A47;
         float: left;
         font-size: 17px; 
         padding: .3% 1%
@@ -49,13 +49,13 @@ This is the navigation bar component of the website.
 
     /* Hover over links */
     .navigation-bar a:hover {
-        background-color: #F64C72;
+        background-color: #F03A47;
         color: rgb(255, 255, 255);
     }
 
     /* Active link */
     .navigation-bar a.active {
-        background-color: #F64C72;
+        background-color: #F03A47;
         color: rgb(249, 249, 249);
     }
 </style>
