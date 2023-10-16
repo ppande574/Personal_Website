@@ -58,7 +58,7 @@ is called, which sets the current link as the active link.
     }
 
     /* Active link (determined by event handler in JavaScript) */
-    .navigation-bar a.active { 
+    .navigation-bar .router-link-active { 
         background-color: #F03A47;
         color: rgb(249, 249, 249);
     }
