@@ -39,35 +39,7 @@ navigation bar, this is where they will be redirected.
     </div>
 
     <div class="tabs">
-        <button
-          class="tab"
-          :class="{ active: activeTab === 'education' }"
-          @click="setActiveTab('education')"
-        >
-          Education
-        </button>
-        <button
-          class="tab"
-          :class="{ active: activeTab === 'skills' }"
-          @click="setActiveTab('skills')"
-        >
-          Skills
-        </button>
-        <button
-          class="tab"
-          :class="{ active: activeTab === 'download-resume' }"
-          @click="setActiveTab('download-resume')"
-        >
-          Download Resume
-        </button>
     </div>
-
-    <!-- <div class="tab-content">
-      <div v-if="activeTab == education">
-        <p>University of Nebraska - Lincoln</p>
-        <p>Bachelor of Science - Computer Science (minors in Mathematics & Business Administration)</p>
-      </div> 
-    </div> -->
 
   </body>
 </template>
@@ -80,15 +52,7 @@ export default {
   components: {
     NavigationBar,
   },
-  data() {
-    return {
-      activeTab: "education", // Default to "Education"
-    };
-  },
   methods: {
-    setActiveTab(tab) {
-      this.activeTab = tab;
-    },
   },
 };
 </script>
@@ -124,39 +88,5 @@ export default {
     padding-right: 25%;
     color: white; 
   }
-
-  .tabs {
-  display: flex;
-  justify-content: center;
-}
-
-.tab {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 2% 4%; /* Responsive padding */
-  margin: 2%;
-  color: #F03A47;
-  font-weight: bold;
-  font-size: 1.2vw; /* Responsive font size using vw */
-}
-
-.tab.active {
-  border-bottom: 2px solid #ffffff;
-}
-
-.tab:hover:not(.active) {
-  transition: border 0.3s;
-}
-
-.content {
-  padding: 5% 10%; /* Responsive padding */
-  font-size: 2vw; /* Responsive font size using vw */
-}
-
-.tab-content p {
-  color: white; 
-
-}
 
 </style>
