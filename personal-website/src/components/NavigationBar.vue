@@ -3,7 +3,8 @@ is called, which sets the current link as the active link.
 
 <template>
   <div class="navigation-bar">
-    <h1>Pratik Pande</h1>
+    <h1>Pratik</h1>
+    <h1 id="last-name">Pande</h1>
     <div id="nav-links">
         <router-link :to="{ name: 'home' }">Home</router-link>
         <router-link :to="{ name: 'experiences' }">Experience</router-link>
@@ -11,11 +12,6 @@ is called, which sets the current link as the active link.
     </div>
   </div>
 </template>
-
-<script>
-    export default {
-    };
-</script>
 
 <style scoped>
     /* Styling for navigation bar itself */
@@ -27,11 +23,16 @@ is called, which sets the current link as the active link.
     }
 
     .navigation-bar h1 {
-        color: #F03A47;
+        color:  #F03A47;
         float: left;
         font-size: 25px; 
-        padding-left: 1%;
-        padding-right: 1%; 
+        padding-right: 0.5%;
+    }
+
+    .navigation-bar h1#last-name {
+        color:  #4CAF50;
+        float: left;
+        font-size: 25px; 
     }
 
     .navigation-bar div {
@@ -53,13 +54,13 @@ is called, which sets the current link as the active link.
 
     /* Hover over links */
     .navigation-bar a:hover {
-        color: #F03A47;
-        background-color: rgb(255, 255, 255);
+        background-color:  #4CAF50;
+        color: rgb(249, 249, 249);
     }
 
     /* Active link (determined by event handler in JavaScript) */
     .navigation-bar .router-link-active { 
         background-color: #F03A47;
-        color: rgb(249, 249, 249);
+        color: rgb(255, 255, 255);
     }
 </style>

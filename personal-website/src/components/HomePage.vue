@@ -1,4 +1,8 @@
 <template>
+    <div class="welcome-section">
+      <h1>Welcome</h1>
+      <img src="@/assets/homepage-welcome-image.png" alt="Welcome Image">
+    </div>
     <div class="about-section">
       <h1>About Me</h1>
       <p>
@@ -31,15 +35,31 @@
 </template>
 
 <style>
-  .about-section {
-    margin-top: 15%;
+  .welcome-section {
+    margin-top: 1%; 
     align-items: center;
-    color: #F03A47;
+  }
+
+  .welcome-section h1 {
+    color: #4CAF50;
+  }
+
+  .welcome-section img {
+    max-width: 100%;
+    height: auto; 
+  }
+
+  .about-section {
+    margin-top: none;
+    align-items: center;
+    
   }
 
   .about-section h1 {
+    color: #F03A47;
     text-align: left;
     padding-left: 10%;
+    text-decoration: underline; 
   }
 
   .about-section p {
