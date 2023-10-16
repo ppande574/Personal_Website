@@ -46,8 +46,9 @@ is called, which sets the current link as the active link.
     .navigation-bar h1 {
         color: #F03A47;
         float: left;
-        font-size: 17px; 
-        padding: .3% 1%
+        font-size: 25px; 
+        padding-left: 1%;
+        padding-right: 1%; 
     }
 
     .navigation-bar div {
@@ -61,13 +62,16 @@ is called, which sets the current link as the active link.
         text-align: center;
         padding: 1% 1%;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 17px; 
+        margin-top: .7%;
+        margin-right: 0.5%;
+        /* border-radius: 105%; */
     }
 
     /* Hover over links */
     .navigation-bar a:hover {
-        background-color: #F03A47;
-        color: rgb(255, 255, 255);
+        color: #F03A47;
+        background-color: rgb(255, 255, 255);
     }
 
     /* Active link (determined by event handler in JavaScript) */
