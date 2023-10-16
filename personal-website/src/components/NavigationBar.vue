@@ -5,32 +5,15 @@ is called, which sets the current link as the active link.
   <div class="navigation-bar">
     <h1>Pratik Pande</h1>
     <div id="nav-links">
-      <a :class="{ active: activeLink === 'home' }" @click="setActiveLink('home')" href="#home">Home</a>
-      <a :class="{ active: activeLink === 'experience' }" @click="setActiveLink('experience')" href="#experience">Experience</a>
-      <a :class="{ active: activeLink === 'interests' }" @click="setActiveLink('interests')" href="#interests">Interests</a>
+        <router-link :to="{ name: 'home' }">Home</router-link>
+        <router-link :to="{ name: 'experiences' }">Experience</router-link>
+        <router-link :to="{ name: 'interests' }">Interests</router-link>
     </div>
   </div>
 </template>
 
 <script>
     export default {
-        data() {
-            return {
-                activeLink: 'home' // By default, the active link is set to the home page (landing page)
-            };  
-        },
-        methods: {
-
-            /**
-             * @param {*} link 
-             * We pass the "home", "experience" and "interests" links as arguments when clicked upon and set them active.
-             * Upon doing so, the HTML element is assigned the "active" class, which allows for it to be styled accordingly by CSS.
-             */
-
-            setActiveLink(link) { 
-                this.activeLink = link; 
-            }
-        }
     };
 </script>
 
