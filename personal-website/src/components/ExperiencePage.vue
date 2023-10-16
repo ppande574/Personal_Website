@@ -1,10 +1,11 @@
 <template>
-    <h1>Experience Placeholder</h1>
+    <div class="experience-section">
+        <h1>Experience</h1>
+        <p></p>
+    </div>
 </template>
 
 
 <style scoped>
-    h1 {
-        color: white; 
-    }
+
 </style>

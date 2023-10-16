@@ -1,5 +1,4 @@
-This is the landing page for the website. Anytime a user clicks "Home" in the
-navigation bar, this is where they will be redirected.
+This is the landing page for the website.
 
 <template>
   <div>
