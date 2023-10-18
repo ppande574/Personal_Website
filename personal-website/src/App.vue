@@ -3,22 +3,21 @@ This is the landing page for the website.
 <template>
   <div>
     <NavigationBar></NavigationBar>
-  </div>
-  <div>
     <router-view></router-view>
+    <FooterBar></FooterBar>
   </div>
-  <footer class="footer">
-    <p>&copy; 2023 Pratik Pande</p>
-  </footer>
 </template>
+
 
 <script>
 import NavigationBar from "./components/NavigationBar.vue";
+import FooterBar from "./components/FooterBar.vue";
 
 export default {
   name: "App",
   components: {
     NavigationBar,
+    FooterBar
   },
   methods: {},
 };
@@ -52,13 +51,5 @@ export default {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #F03A47; /* Change the handle color on hover */
-}
-
-.footer {
-  margin-top: 5%;
-}
-
-.footer p {
-  color: white; 
 }
 </style>
