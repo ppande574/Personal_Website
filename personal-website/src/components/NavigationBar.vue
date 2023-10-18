@@ -4,9 +4,7 @@ current link as the active link.
 
 <template>
   <div class="name-link">
-    <router-link :to="{ name: 'home' }"
-      ><h1>Pratik <span>Pande</span></h1></router-link
-    >
+    <router-link :to="{ name: 'home' }"><h1>Pratik <span>Pande</span></h1></router-link>
   </div>
   <div class="navigation-bar">
     <div id="nav-links">
