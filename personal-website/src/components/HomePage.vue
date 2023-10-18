@@ -22,21 +22,20 @@
     </p>
   </div>
   <div class="resume-button">
-    <button type="button">View My Resume</button>
+    <button @click="openPDF">View My Resume</button>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      activeTab: 'resume', // Initially set to 'skills' to show its content
-    };
-  },
   methods: {
-    toggleTab(tab) {
-      this.activeTab = tab;
-    },
+    openPDF() {
+      // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+      const pdfURL = '/public/Pande_GenericResumeForWebsite.pdf';
+      
+      // Open the PDF in a new tab
+      window.open(pdfURL, '_blank');
+    }
   },
 };
 </script>

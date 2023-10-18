@@ -3,37 +3,42 @@ nav bar is clicked, the "setActiveLink" JS method is called, which sets the
 current link as the active link.
 
 <template>
+  <div class="name-link">
+    <router-link :to="{ name: 'home' }"
+      ><h1>Pratik <span>Pande</span></h1></router-link
+    >
+  </div>
   <div class="navigation-bar">
-    <h1>Pratik</h1>
-    <h1 id="last-name">Pande</h1>
     <div id="nav-links">
-        <router-link :to="{ name: 'home' }">Home</router-link>
-        <router-link :to="{ name: 'experiences' }">Experience</router-link>
-        <router-link :to="{ name: 'interests' }">Interests</router-link>
+      <router-link :to="{ name: 'home' }">Home</router-link>
+      <router-link :to="{ name: 'experiences' }">Experience</router-link>
+      <router-link :to="{ name: 'interests' }">Interests</router-link>
     </div>
   </div>
 </template>
 
 <style scoped>
+.name-link {
+  margin-left: 2%;
+}
+
+.name-link h1 {
+  color: #f03a47;
+  float: left;
+  font-size: 25px;
+}
+
+.name-link h1 span {
+  color: #4caf50;
+  font-size: 25px;
+}
+
 .navigation-bar {
   overflow: hidden;
 }
 
-.navigation-bar h1 {
-  color: #f03a47;
-  float: left;
-  font-size: 25px;
-  padding-right: 0.5%;
-}
-
-.navigation-bar h1#last-name {
-  color: #4caf50;
-  float: left;
-  font-size: 25px;
-}
-
 .navigation-bar div {
-  margin-left: 15%;
+  margin-left: 5%;
 }
 
 /* Styling for links within nav bar */
@@ -71,21 +76,18 @@ current link as the active link.
   }
 
   .navigation-bar #nav-links a {
-    float: left; 
+    float: left;
     display: block;
     text-align: center;
     font-size: 15px;
   }
-  .navigation-bar h1 {
+  .name-link h1 {
     font-size: 18px;
     margin-top: 1.5%;
-
   }
-  .navigation-bar h1#last-name {
+  .name-link h1 span {
     font-size: 18px;
-    padding-right: 10%;
     margin-top: 1.5%;
-    margin-left: 1%;
   }
 }
 </style>
