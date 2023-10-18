@@ -1,71 +1,126 @@
 <template>
-    <div class="welcome-section">
-      <h1>Welcome</h1>
-      <img src="@/assets/homepage-welcome-image.png" alt="Welcome Image">
-    </div>
-    <div class="about-section">
-      <h1>About Me</h1>
-      <p>
-        My name is Pratik Pande. I am a senior at the University of Nebraska -
-        Lincoln, and I am currently pursuing a major in Computer Science along
-        with minors in Mathematics and Business Administration. My academic
-        journey has not only equipped me with a strong foundation in software
-        engineering but also honed my analytical and business acumen. I am
-        extremely passionate about programming. My goal is to always seek out
-        opportunities in which I can apply my software engineering skills to
-        their highest degree and continue to learn new things every single day.
-      </p>
-      <p>
-        In my quest to embrace challenges and expand my knowledge, I am now
-        actively seeking full-time entry-level opportunities in software
-        engineering and product management. I am eager to contribute my skills,
-        creativity, and problem-solving abilities to organizations that foster
-        innovation and a dynamic learning environment. I am committed to
-        evolving my capabilities and delivering impactful solutions, making a
-        positive impact on the projects I undertake.
-      </p>
-      <p>
-        My unwavering passion for programming has driven me to excel in various
-        projects, from developing innovative software solutions to collaborating
-        with cross-functional teams. I am motivated by a relentless pursuit of
-        excellence and the desire to stay at the forefront of technological
-        advancements.
-      </p>
+  <div class="welcome-section">
+    <h1>Welcome to my Personal Website!</h1>
+    <img src="@/assets/homepage-welcome-image.png" alt="Welcome Image" />
+  </div>
+  <div class="about-section">
+    <h1>About Me</h1>
+    <p>
+      My name is Pratik Pande and I am a fourth-year college student <span>currently
+      pursuing a Bachelor's in Computer Science along with minors in Mathematics and
+      Business Administration.</span> My academic journey has not only equipped me with
+      a strong foundation in software engineering but also honed my analytical
+      and business acumen. I am extremely passionate about programming. My goal
+      is to always seek out opportunities in which I can apply my software
+      engineering skills to their highest degree and continue to learn new
+      things every single day.
+    </p>
+    <p>
+      In my quest to embrace challenges and expand my knowledge, <span>I am now
+      actively seeking full-time entry-level opportunities in software
+      engineering and product management.</span>
+    </p>
+  </div>
+  <div class="resume-button">
+    <button type="button">View My Resume</button>
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      activeTab: 'resume', // Initially set to 'skills' to show its content
+    };
+  },
+  methods: {
+    toggleTab(tab) {
+      this.activeTab = tab;
+    },
+  },
+};
+</script>
+
 <style>
-  .welcome-section {
-    margin-top: 1%; 
-    align-items: center;
-  }
+.welcome-section {
+  margin-top: 1%;
+  align-items: center;
+  text-align: center;
+}
 
-  .welcome-section h1 {
-    color: #4CAF50;
-  }
+.welcome-section h1 {
+  color: #f03a47;
+}
 
-  .welcome-section img {
-    max-width: 100%;
-    height: auto; 
-  }
+.welcome-section img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
 
-  .about-section {
-    margin-top: none;
-    align-items: center;
+.about-section {
+  margin-top: none;
+  align-items: center;
+}
+
+.about-section h1 {
+  color: #f03a47;
+  text-align: left;
+  padding-left: 20%;
+  text-decoration: underline;
+}
+
+.about-section p {
+  text-align: left;
+  padding-left: 25%;
+  padding-right: 25%;
+  color: white;
+}
+
+.about-section p span {
+  color: #4caf50
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
     
   }
 
-  .about-section h1 {
-    color: #F03A47;
-    text-align: left;
-    padding-left: 10%;
-    text-decoration: underline; 
+  .tab {
+    margin-top: 3%;
+    color: #f03a47;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px white;
+    outline: white;
+    font-size: 18px;
   }
 
-  .about-section p {
-    text-align: left;
-    padding-left: 15%;
-    padding-right: 25%;
-    color: white; 
+  .tab.active {
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+  }
+
+  .tab-content {
+    text-align: center;
+  }
+
+  .resume-button button {
+    margin-top: 2%;
+    background-color: #4caf50; /* Background color */
+    color: #ffffff; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+
+  .resume-button button:hover {
+    background-color: #f03a47; /* Hover color */
   }
 </style>

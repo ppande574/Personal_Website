@@ -15,8 +15,8 @@
       </li>
     </ul>
     <hr />
-    <h2>Student Software Developer (Capstone Project)</h2>
-    <h3>University of Nebraska - Lincoln (January 2023 - Current)</h3>
+    <h2>Student Software Developer</h2>
+    <h3>University Undergraduate Capstone (January 2023 - Current)</h3>
     <ul>
       <li>
         <span><strong>Technologies Used:</strong></span> JavaScript(VueJS,
@@ -31,7 +31,7 @@
 
     <hr />
     <h2>Senior Leader</h2>
-    <h3>University of Nebraska - Lincoln (June 2023 - Current)</h3>
+    <h3>Part-Time Undergraduate Position (June 2023 - Current)</h3>
     <ul>
         <li><span><strong>Chair of Course Success subcommittee</strong></span></li>
         <li>
