@@ -1,3 +1,9 @@
 <template>
-    <h1>Interests Placeholder</h1>
+    <div class="test">
+        <h1></h1>
+    </div>
 </template>
+
+
+<style>
+</style>

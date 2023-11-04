@@ -9,8 +9,7 @@ current link as the active link.
   <div class="navigation-bar">
     <div id="nav-links">
       <router-link :to="{ name: 'home' }">Home</router-link>
-      <router-link :to="{ name: 'experiences' }">Experience</router-link>
-      <router-link :to="{ name: 'interests' }">Interests</router-link>
+      <router-link :to="{ name: 'experiences' }">Download Resume</router-link>
     </div>
   </div>
 </template>

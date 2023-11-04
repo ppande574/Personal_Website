@@ -24,6 +24,12 @@
         software engineering and product management.</span
       >
     </p>
+    <div id="skills-section">
+      <h1>Skills</h1>
+      <p><span>Programming Languages/Frameworks:</span> C# (ASP.NET MVC), Python, Java, C/C++, JavaScript (NestJS, VueJS), TypeScript, Ionic</p>
+      <p><span>Technologies:</span> GitHub, Microsoft Azure, Figma, Zenhub, Docker, Firebase, IDE's</p>
+      <p><span>Other: </span>Communication, Algorithm Analysis/Design, Debugging, Problem-Solving, Teamwork</p>
+    </div>
   </div>
   <div class="resume-button">
     <button @click="openPDF">View My Resume</button>
