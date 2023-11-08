@@ -21,34 +21,33 @@
       In my quest to embrace challenges and expand my knowledge,
       <span
         >I am now actively seeking full-time entry-level opportunities in
-        software engineering and product management.</span
+        software engineering and development.</span
       >
     </p>
     <div id="skills-section">
       <h1>Skills</h1>
-      <p><span>Programming Languages/Frameworks:</span> C# (ASP.NET MVC), Python, Java, C/C++, JavaScript (NestJS, VueJS), TypeScript, Ionic</p>
-      <p><span>Technologies:</span> GitHub, Microsoft Azure, Figma, Zenhub, Docker, Firebase, IDE's</p>
-      <p><span>Other: </span>Communication, Algorithm Analysis/Design, Debugging, Problem-Solving, Teamwork</p>
+      <p>
+        <span>Programming Languages/Frameworks:</span> C# (ASP.NET MVC), Python,
+        Java, C/C++, JavaScript (NestJS, VueJS), TypeScript, Ionic
+      </p>
+      <p>
+        <span>Technologies:</span> GitHub, Microsoft Azure, Figma, Zenhub,
+        Docker, Firebase, IDE's
+      </p>
+      <p>
+        <span>Other: </span>Communication, Algorithm Analysis/Design, Debugging,
+        Problem-Solving, Teamwork
+      </p>
     </div>
   </div>
   <div class="resume-button">
-    <button @click="openPDF">View My Resume</button>
+    <!-- <router-link :to="{ name: 'experiences' }"> -->
+      <button>Download Resume</button>
+    <!-- </router-link> -->
   </div>
 </template>
 
-<script>
-export default {
-  methods: {
-    openPDF() {
-      // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
-      const pdfURL = "/public/Pande_GenericResumeForWebsite.pdf";
-
-      // Open the PDF in a new tab
-      window.open(pdfURL, "_blank");
-    },
-  },
-};
-</script>
+<script></script>
 
 <style>
 .welcome-section {

@@ -4,15 +4,20 @@ current link as the active link.
 
 <template>
   <div class="name-link">
-    <router-link :to="{ name: 'home' }"><h1>Pratik <span>Pande</span></h1></router-link>
+    <router-link :to="{ name: 'home' }"
+      ><h1>Pratik <span>Pande</span></h1></router-link
+    >
   </div>
   <div class="navigation-bar">
     <div id="nav-links">
       <router-link :to="{ name: 'home' }">Home</router-link>
-      <router-link :to="{ name: 'experiences' }">Download Resume</router-link>
+      <router-link :to="{ name: 'projects'}">Personal Projects</router-link>
+      <router-link :to="{ name: 'contact'}">Contact Me</router-link>
     </div>
   </div>
 </template>
+
+
 
 <style scoped>
 .name-link {
