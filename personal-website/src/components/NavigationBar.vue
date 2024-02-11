@@ -12,7 +12,7 @@ current link as the active link.
     <div id="nav-links">
       <router-link :to="{ name: 'home' }">Home</router-link>
       <router-link :to="{ name: 'projects'}">Portfolio</router-link>
-      <!-- <router-link :to="{ name: 'contact'}">Contact Me</router-link> -->
+      <router-link :to="{ name: 'contact'}">Contact Me</router-link>
     </div>
   </div>
 </template>

@@ -9,7 +9,7 @@
         <i class="fab fa-github"></i>
       </a>
     </div>
-    <p>&copy; 2023 Pratik Pande</p>
+    <p><span>&copy;2024 Pratik Pande</span></p>
   </footer>
 </template>
 
@@ -21,5 +21,9 @@
 .footer p {
   color: white;
   text-align: center;
+}
+
+.footer p span {
+  color: red
 }
 </style>
