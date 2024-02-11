@@ -21,18 +21,19 @@
       In my quest to embrace challenges and expand my knowledge,
       <span
         >I am now actively seeking full-time entry-level opportunities in
-        software engineering and development.</span
+        software engineering and development. I am also open to internships in
+        either field.</span
       >
     </p>
     <div id="skills-section">
       <h1>Skills</h1>
       <p>
         <span>Programming Languages/Frameworks:</span> C# (ASP.NET MVC), Python,
-        Java, C/C++, JavaScript (NestJS, VueJS), TypeScript, Ionic
+        Java, C/C++, JavaScript (NestJS, VueJS, ReactJS), TypeScript, Ionic, SQL
       </p>
       <p>
         <span>Technologies:</span> GitHub, Microsoft Azure, Figma, Zenhub,
-        Docker, Firebase, IDE's
+        Docker, Firebase, IDE's (Eclipse, Jetbrains Rider, VS, VSCode), Docker
       </p>
       <p>
         <span>Other: </span>Communication, Algorithm Analysis/Design, Debugging,
@@ -41,13 +42,43 @@
     </div>
   </div>
   <div class="resume-button">
-    <!-- <router-link :to="{ name: 'experiences' }"> -->
-      <button>Download Resume</button>
-    <!-- </router-link> -->
+    <!-- <a href="@/public/Generic_ResumeForWebsite.pdf" download="PandeResume.pdf">Download My Resume!</a> -->
+    <button @click="downloadResume">Download Resume</button>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  methods: {
+    downloadResume() {
+      // Replace 'path_to_your_resume.pdf' with the actual path to your PDF resume
+      const resumePath = '/Generic_ResumeForWebsite.pdf';
+
+      // Fetch the PDF file as a blob
+      fetch(resumePath)
+        .then(response => response.blob())
+        .then(blob => {
+          // Create a blob URL for the blob
+          const url = URL.createObjectURL(blob);
+          
+          // Create a temporary anchor element
+          const link = document.createElement('a');
+          link.href = url;
+          link.setAttribute('download', 'Pratik_Pande_Resume.pdf');
+          
+          // Programmatically trigger a click event on the anchor element to initiate the download
+          link.click();
+          
+          // Cleanup: Revoke the blob URL after the download
+          URL.revokeObjectURL(url);
+        })
+        .catch(error => {
+          console.error('Error fetching PDF:', error);
+        });
+    }
+  }
+}
+</script>
 
 <style>
 .welcome-section {
@@ -125,6 +156,7 @@
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s; /* Smooth background color transition */
+  text-decoration: none;
 }
 
 .resume-button button:hover {
