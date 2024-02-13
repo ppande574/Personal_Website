@@ -1,5 +1,3 @@
-This is the landing page for the website.
-TODO: Implement toggle for dark/light mode and change placeholder image to professional headshot
 <template>
   <div>
     <NavigationBar></NavigationBar>
@@ -26,7 +24,7 @@ export default {
 <style>
 * {
   /* background: white; */
-  background: black;
+  background: black; 
 }
 
 #app {
