@@ -52,7 +52,7 @@ export default {
   methods: {
     downloadResume() {
       // Replace 'path_to_your_resume.pdf' with the actual path to your PDF resume
-      const resumePath = '/Generic_ResumeForWebsite.pdf';
+      const resumePath = 'Generic_ResumeForWebsite.pdf';
 
       // Fetch the PDF file as a blob
       fetch(resumePath)
