@@ -1,5 +1,5 @@
 <template>
-  <h1>Contact Me on LinkedIn!</h1>
+  <h1>Contact Me on LinkedIn, and check out my GitHub!</h1>
 </template>
 
 <style>

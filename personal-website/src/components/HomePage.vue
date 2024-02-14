@@ -88,7 +88,7 @@ export default {
 }
 
 .welcome-section h1 {
-  color: #f03a47;
+  color: #4caf50;
 }
 
 .welcome-section img {
